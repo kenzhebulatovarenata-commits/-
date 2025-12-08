@@ -28,14 +28,14 @@
 
   <!-- Блок 1 -->
   <video controls>
-    <source src="animation1.mp4" type="video/mp4">
+    <source src="vid 1.mp4" type="video/mp4">
     Ваш браузер не поддерживает видео.
   </video>
   <p>Текст между анимациями 1 и 2</p>
 
   <!-- Блок 2 -->
   <video controls>
-    <source src="animation2.mp4" type="video/mp4">
+    <source src="vid 2.mp4" type="video/mp4">
     Ваш браузер не поддерживает видео.
   </video>
   <p>Текст после второй анимации</p>
