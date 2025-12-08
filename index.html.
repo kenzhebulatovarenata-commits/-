@@ -14,12 +14,12 @@
   <video controls>
     <source src="vid 1.mp4" type="video/mp4">
   </video>
-  <p>Текст между анимациями 1 и 2</p>
+  <p>арка 1</p>
 
   <video controls>
     <source src="vid 2.mp4" type="video/mp4">
   </video>
-  <p>Текст после второй анимации</p>
+  <p>арка 2</p>
 
 </body>
 </html>
