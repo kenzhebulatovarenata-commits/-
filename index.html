@@ -18,76 +18,81 @@
     }
 
     /* Фиксированная плашка */
-.header {
-  position: fixed;
-  top: 0px;          /* поднял ближе к верху */
-  left: 0;
-  width: 100%;
-  background: white;
-  padding: 40px 20px; /* увеличил высоту плашки */
-  z-index: 999;
-}
+  .header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 45px 20px;
+    z-index: 999;
+  }
 
-/* Текст внутри плашки */
-.header-title {
-  font-size: 100px;    /* стал крупнее */
-  color: black;
-  margin: 0;
-  text-align: left;
-  line-height: 1.0;   /* строки плотнее */
-  white-space: pre-line;
-}
+  .header-title {
+    font-size: 36px;
+    color: black;
+    margin: 0;
+    text-align: left;
+    line-height: 1.0;
+    white-space: pre-line;
+  }
 
-/* Контейнер контента с такими же отступами, как у плашки */
-.content {
-  padding-top: 230px; /* чтобы не заезжало под плашку */
-  padding-left: 5px; /* совпадает с padding плашки */
-  padding-right: 5px;
-}
+  /* Контейнер контента с теми же отступами, что у плашки */
+  .content {
+    padding-top: 230px; /* место под плашку */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-/* Видео на всю ширину контента */
-video {
-  width: 100%;
-  height: auto;      /* сохраняет пропорции */
-  margin-bottom: 5px;
-  border-radius: 6px;
-  pointer-events: none;
-}
+  /* Заголовок «АРКИ СРЕДИ НАС» слева, большой */
+  .main-title {
+    font-size: 144px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 40px 0;
+    text-align: left;
+  }
 
-    h2 {
-      font-size: 144px;
-      font-weight: 700;
-      line-height: 1.1;
-      margin-top: 5px;
-      margin-bottom: 40px;
-      text-align: left;
-    }
+  /* Блок анимаций по центру */
+  .animation-block {
+    text-align: center; /* все анимации по центру */
+  }
 
-    video {
-      width: 100%;
-      margin-bottom: 20px;
-      border-radius: 6px;
-      pointer-events: none;
-    }
+  .animation {
+    display: inline-block;
+    width: 80%;      /* увеличиваем, чтобы занимали больше места */
+    height: 200px;
+    background-color: #222;
+    margin: 20px 0;
+    line-height: 200px;
+    font-size: 32px;
+    color: white;
+    border-radius: 6px;
+    animation: fadeIn 2s ease-in-out;
+  }
 
-    p {
-      font-size: 20px;
-      margin-bottom: 30px;
-      color: #ccc;
-    }
-  </style>
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .animation-text {
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+
+</style>
 </head>
-
 <body>
 
-  <div class="header">
-    <h1 class="header-title">МУЗЕЙ
+<div class="header">
+  <h1 class="header-title">МУЗЕЙ
 МОСКВЫ</h1>
-  </div>
+</div>
 
-  <div class="content">
-
-    <h2>АРКИ СРЕДИ НАС</h2>
+<div class="content">
+  <h2 class="main-title">АРКИ СРЕДИ НАС</h2>
 
     <video class="autoplay" muted playsinline loop>
     <source src="vid 1.mp4" type="video/mp4">
