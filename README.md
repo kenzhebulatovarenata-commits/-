@@ -36,7 +36,72 @@
   <p>Текст после второй анимации</p>
 
   <video class="autoplay" muted playsinline loop>
-    <source src="animation3.mp4" type="video/mp4">
+    <source src="vid 3.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+  
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 4.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 5.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 6.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 7.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 8.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 9.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 10.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 11.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 12.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 13.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 14.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 15.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 16.mp4" type="video/mp4">
   </video>
   <p>Текст после третьей анимации</p>
 
