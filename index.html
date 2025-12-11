@@ -58,6 +58,14 @@
       line-height: 0.5;
       white-space: pre-line;
     }
+    .title-image {
+      position: absolute;
+      right: 0;            /* прижато к правой границе блока */
+      top: 50%;            /* по вертикали по центру заголовка */
+      transform: translateY(-50%); /* точное вертикальное выравнивание */
+      height: 100px;       /* регулируешь размер картинки */
+      pointer-events: none; /* чтобы не мешало кликам */
+    }
 /* Видео на всю ширину контента */
     video {
       width: 100%;
@@ -89,6 +97,7 @@
       СРЕДИ<br>
       НАС
     </h2>
+    <img src="cross.png" alt="Декор" class="title-image">
 
     <video class="autoplay" muted playsinline loop>
     <source src="vid 1.mp4" type="video/mp4">
