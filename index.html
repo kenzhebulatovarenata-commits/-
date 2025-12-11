@@ -138,6 +138,21 @@
         v.play().catch(() => {});
       });
     }, 1000);
+  
+  <script>
+    // Intersection Observer для запуска анимации при видимости
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active'); // запускаем анимацию
+          observer.unobserve(entry.target); // больше не наблюдаем этот элемент
+        }
+      });
+    }, { threshold: 0.1 }); // элемент считается видимым, если хотя бы 10% видно
+
+    document.querySelectorAll('.animate-me').forEach(el => {
+      observer.observe(el);
+    });
   </script>
 
 </body>
