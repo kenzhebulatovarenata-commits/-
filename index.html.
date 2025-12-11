@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>АРКИ СРЕДИ НАС</title>
 
+  <!-- Подключение шрифта Inter Tight -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter Tight', sans-serif;
+      background-color: #000;
+      color: #fff;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>АРКИ СРЕДИ НАС</h1>
+
+    <video class="autoplay" muted playsinline loop>
+    <source src="vid 1.mp4" type="video/mp4">
+  </video>
+  <p>Текст между анимациями 1 и 2</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 2.mp4" type="video/mp4">
+  </video>
+  <p>Текст после второй анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 3.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 4.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 5.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 6.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 7.mp4" type="video/mp4">
+  </video>
+  <p>Текст между анимациями 1 и 2</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 8.mp4" type="video/mp4">
+  </video>
+  <p>Текст после второй анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 9.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 10.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 11.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 12.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 13.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 14.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 15.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <video class="autoplay" muted playsinline loop>
+    <source src="vid 16.mp4" type="video/mp4">
+  </video>
+  <p>Текст после третьей анимации</p>
+
+  <script>
+    // насильный автоплей
+    document.querySelectorAll('video.autoplay').forEach(v => {
+      v.addEventListener('canplay', () => {
+        v.play().catch(() => {});
+      });
+    });
+
+    // запасной вариант — попытаться проиграть через 1 секунду
+    setTimeout(() => {
+      document.querySelectorAll('video.autoplay').forEach(v => {
+        v.play().catch(() => {});
+      });
+    }, 1000);
+  </script>
+
+</body>
+</html>
