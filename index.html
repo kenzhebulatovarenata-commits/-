@@ -17,29 +17,23 @@
       line-height: 1.5;
     }
 
-    /* Фиксированная плашка */
     .header {
       position: fixed;
-      top: 75px;           /* примерно 2 см от верхнего края */
+      top: 0px;
       left: 0;
       width: 100%;
       background: white;
-      padding: 20px;
+      padding: 40px 20px;
       z-index: 999;
     }
 
     .header-title {
-      font-size: 24px;
+      font-size: 66px;
       color: black;
       margin: 0;
       text-align: left;
-      line-height: 1.1;
-      white-space: pre-line; /* разрешает перенос вручную */
-    }
-
-    /* Контент с отступом, чтобы не лез под плашку */
-    .content {
-      padding-top: 200px;   /* 75px + высота плашки примерно 120px */
+      line-height: 1.0;
+      white-space: pre-line;
     }
 
     h2 {
@@ -51,12 +45,21 @@
       text-align: left;
     }
 
-    video {
-      width: 100%;
-      margin-bottom: 20px;
-      border-radius: 6px;
-      pointer-events: none;
-    }
+    /* Контейнер контента с такими же отступами, как у плашки */
+.content {
+  padding-top: 235px;   /* немного больше, чтобы не заезжало под плашку */
+  padding-left: 20px;   /* совпадает с плашкой */
+  padding-right: 20px;  /* совпадает с плашкой */
+}
+
+/* Видео на всю ширину контента */
+video {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 20px;
+  border-radius: 6px;
+  pointer-events: none;
+}
 
     p {
       font-size: 20px;
@@ -74,7 +77,6 @@
   </div>
 
   <div class="content">
-
     <h2>АРКИ СРЕДИ НАС</h2>
 
     <video class="autoplay" muted playsinline loop>
