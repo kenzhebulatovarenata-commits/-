@@ -5,11 +5,11 @@
   <title>Мои анимации</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Inter Tight;
       max-width: 800px;
       margin: auto;
       padding: 20px;
-      line-height: 1.5;
+      line-height: 2.5;
     }
     video {
       width: 100%;
