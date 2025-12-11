@@ -46,6 +46,28 @@
       margin-bottom: 30px;
       color: #ccc;
     }
+      .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .header-title {
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0;
+    text-align: left;
+    white-space: pre-line; /* чтобы переносы работали */
+  }
+
+  /* Чтобы контент не заезжал под шапку */
+  .content {
+    padding-top: 150px;
+  }
   </style>
 </head>
 <body>
