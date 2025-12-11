@@ -30,7 +30,7 @@
 
 /* Текст внутри плашки */
 .header-title {
-  font-size: 54px;    /* стал крупнее */
+  font-size: 66px;    /* стал крупнее */
   color: black;
   margin: 0;
   text-align: left;
@@ -38,9 +38,20 @@
   white-space: pre-line;
 }
 
-/* Чтобы контент не заезжал под плашку */
+/* Контейнер контента с такими же отступами, как у плашки */
 .content {
-  padding-top: 230px; /* увеличил, чтобы она не перекрывала заголовок */
+  padding-top: 235px; /* чтобы не заезжало под плашку */
+  padding-left: 20px; /* совпадает с padding плашки */
+  padding-right: 20px;
+}
+
+/* Видео на всю ширину контента */
+video {
+  width: 100%;
+  height: auto;      /* сохраняет пропорции */
+  margin-bottom: 20px;
+  border-radius: 6px;
+  pointer-events: none;
 }
 
     h2 {
