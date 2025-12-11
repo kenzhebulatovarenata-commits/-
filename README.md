@@ -1,29 +1,47 @@
-АРКИ СРЕДИ НАС
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Мои анимации</title>
+  <title>АРКИ СРЕДИ НАС</title>
+
+  <!-- Подключение шрифта Inter Tight -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Inter Tight;
+      font-family: 'Inter Tight', sans-serif;
+      background-color: #000;
+      color: #fff;
       max-width: 800px;
       margin: auto;
       padding: 20px;
-      line-height: 2.5;
+      line-height: 1.5;
     }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
     video {
       width: 100%;
       margin-bottom: 20px;
-      border-radius: 5px;
+      border-radius: 6px;
       pointer-events: none;
     }
+
     p {
-      font-size: 18px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
+
+  <h1>АРКИ СРЕДИ НАС</h1>
 
   <video class="autoplay" muted playsinline loop>
     <source src="vid 1.mp4" type="video/mp4">
