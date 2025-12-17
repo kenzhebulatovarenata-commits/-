@@ -30,7 +30,7 @@
     
     body {
       margin: 0;
-      padding: 50px;
+      padding: 40px;
       line-height: 1.5;
       background: url('background.png') no-repeat center top;
       background-size: 100% auto;
@@ -44,14 +44,14 @@
       left: 0;
       width: 100%;
       background: white;
-      padding: 10px 40px;
+      padding: 40px 20px;
       z-index: 999;
     }
 
     .header-title {
       font-size: 66px;
       color: black;
-      margin: 0;
+      margin: 0 0 0 30;
       text-align: left;
       line-height: 1.0;
       white-space: pre-line;
@@ -110,6 +110,12 @@
       font-size: 50px;
       margin-bottom: 30px;
       color: #ccc;
+      text-align: justify;         /* justify выравнивает по ширине */
+      text-align-last: left;       /* последняя строка выравнена влево */
+      word-spacing: normal;        /* расстояние между словами */
+      letter-spacing: normal;      /* расстояние между буквами */
+  /* glyph scaling напрямую в CSS нельзя, используется font-feature-settings */
+      }
     }
     
   </style>
@@ -133,7 +139,7 @@
     
     <p>Описание проекта<p>
       
-    <h3 class="video-title">АРКИ</h3>
+    <h3 class="video-title">АРКA</h3>
     
     <video class="autoplay" muted playsinline loop>
     <source src="vid 2.mp4" type="video/mp4">
@@ -482,9 +488,7 @@
 .footer {
   width: 100%;
   background: white;  
-  padding-top: 600px;
-  padding-left: 30px;/* такая же плашка, как в шапке */
-  padding: 80px;           /* отступы сверху/снизу */
+  padding: 600px 40px 80px 40px;           /* отступы сверху/снизу */
   text-align: left;
   box-sizing: border-box;
   margin: 200px 0 0 0;
